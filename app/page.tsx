@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Github, Linkedin, Mail, Phone } from "lucide-react"
+import { Github, Linkedin, Mail, Phone, Home as HomeIcon } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -18,24 +18,6 @@ export default function Home() {
                 priority
                 className="object-contain"
               />
-            </div>
-
-            <div className="mt-8 flex flex-wrap justify-center gap-2">
-              <span className="rounded-full bg-gradient-to-r from-yellow-500/10 to-red-500/10 px-3 py-1 text-xs text-orange-400 ring-1 ring-orange-500/20">
-                AI Solutions
-              </span>
-              <span className="rounded-full bg-gradient-to-r from-yellow-500/10 to-red-500/10 px-3 py-1 text-xs text-orange-400 ring-1 ring-orange-500/20">
-                Machine Learning
-              </span>
-              <span className="rounded-full bg-gradient-to-r from-yellow-500/10 to-red-500/10 px-3 py-1 text-xs text-orange-400 ring-1 ring-orange-500/20">
-                Software Development
-              </span>
-              <span className="rounded-full bg-gradient-to-r from-yellow-500/10 to-red-500/10 px-3 py-1 text-xs text-orange-400 ring-1 ring-orange-500/20">
-                Cloud Architecture
-              </span>
-              <span className="rounded-full bg-gradient-to-r from-yellow-500/10 to-red-500/10 px-3 py-1 text-xs text-orange-400 ring-1 ring-orange-500/20">
-                Advisory Services
-              </span>
             </div>
 
             <div className="mt-8 flex items-center space-x-12">
@@ -59,6 +41,15 @@ export default function Home() {
                 className="group"
               >
                 <Linkedin className="h-8 w-8 text-orange-400 group-hover:text-orange-500" />
+              </Link>
+              <Link
+                href="https://zackproser.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Personal Website"
+                className="group"
+              >
+                <HomeIcon className="h-8 w-8 text-orange-400 group-hover:text-orange-500" />
               </Link>
             </div>
 
