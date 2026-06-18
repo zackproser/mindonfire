@@ -1,0 +1,14 @@
+allowBuilds:
+  sharp: true
+
+# Force-patch vulnerable transitive build-time deps (pulled in by tailwindcss,
+# autoprefixer, recharts). None ship in the static output; these just clear the
+# audit. Safe minor/patch bumps.
+overrides:
+  brace-expansion: ">=2.0.3"
+  picomatch: ">=2.3.2"
+  yaml: ">=2.8.3"
+  "@babel/runtime": ">=7.26.10"
+  postcss: ">=8.5.10"
+  glob: ">=10.5.0"
+  minimatch: ">=9.0.7"
