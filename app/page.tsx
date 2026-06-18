@@ -10,12 +10,13 @@ export default function Home() {
       <Card className="w-full max-w-3xl overflow-hidden bg-black">
         <CardContent className="p-6">
           <div className="flex flex-col items-center text-center">
-            <div className="relative mb-6 h-[500px] w-[500px]">
+            <div className="relative mb-6 aspect-square w-full max-w-[640px]">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/mind-on-fire-qCF3LlSKl3WKqeykLcI6lhcB9UhUT5.png"
+                src="/mind-on-fire.png"
                 alt="Mind on Fire Logo"
                 fill
                 priority
+                sizes="(max-width: 768px) 100vw, 640px"
                 className="object-contain"
               />
             </div>

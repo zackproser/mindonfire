@@ -8,12 +8,13 @@ export default function Home() {
     <main className="fixed inset-0 bg-black">
       <div className="flex flex-col items-center justify-center min-h-screen">
         <div className="flex flex-col items-center text-center max-w-3xl">
-          <div className="relative mb-6 h-[512px] w-[512px]">
+          <div className="relative mb-6 aspect-square w-full max-w-[640px]">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/mind-on-fire-qCF3LlSKl3WKqeykLcI6lhcB9UhUT5.png"
+              src="/mind-on-fire.png"
               alt="Mind on Fire Logo"
               fill
               priority
+              sizes="(max-width: 768px) 100vw, 640px"
               className="object-contain"
             />
           </div>
